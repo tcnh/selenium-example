@@ -3,7 +3,7 @@
  * and in parallel
  */
 
-podTemplate(cloud: 'openshift', label: 'maven-selenium', containers: [
+podTemplate(cloud: 'openshift', label: 'master', containers: [
   containerTemplate(name: 'maven-firefox', image: 'maven:3.3.9-jdk-8-alpine', ttyEnabled: true, command: 'cat'),
   containerTemplate(name: 'maven-chrome', image: 'maven:3.3.9-jdk-8-alpine', ttyEnabled: true, command: 'cat'),
   containerTemplate(name: 'selenium-hub', image: 'selenium/hub:3.4.0'),
